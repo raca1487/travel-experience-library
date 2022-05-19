@@ -43,6 +43,8 @@ public abstract class Entretenimiento {
 	}
 
 	// METODOS
-	public abstract boolean addValoracion(Valoracion valoracion);
+	public boolean addValoracion(Valoracion valoracion) {
+		return getValoraciones().add(valoracion);
+	}
 
 }

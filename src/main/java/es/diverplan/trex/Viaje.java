@@ -47,10 +47,4 @@ public class Viaje extends Entretenimiento {
 		this.precio = precio;
 	}
 
-	// METODOS
-	@Override
-	public boolean addValoracion(Valoracion valoracion) {
-		return getValoraciones().add(valoracion);
-	}
-
 }
