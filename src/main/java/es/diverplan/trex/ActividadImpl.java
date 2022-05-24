@@ -1,16 +1,20 @@
 package es.diverplan.trex;
 
-public class Actividad extends Entretenimiento {
+import es.diverplan.trex.interfaces.Actividad;
+
+public class ActividadImpl extends Entretenimiento implements Actividad {
 
 	// CAMPOS O ATRIBUTOS
 	private String ciudad;
 	private Coordinador coordinador;
 
 	// GETTERS	
+	@Override
 	public String getCiudad() {
 		return ciudad;
 	}
 	
+	@Override
 	public Coordinador getCoordinador() {
 		return coordinador;
 	}
@@ -25,11 +29,11 @@ public class Actividad extends Entretenimiento {
 	}
 
 	// CONSTRUCTORES
-	public Actividad() {
+	public ActividadImpl() {
 		super();
 	}
 	
-	public Actividad(String titulo, String descripcion, String ciudad, Coordinador coordinador) {
+	public ActividadImpl(String titulo, String descripcion, String ciudad, Coordinador coordinador) {
 		super(titulo, descripcion);
 		this.ciudad = ciudad;
 		this.coordinador = coordinador;

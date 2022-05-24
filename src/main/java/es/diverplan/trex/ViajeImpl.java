@@ -2,22 +2,27 @@ package es.diverplan.trex;
 
 import java.time.LocalDate;
 
-public class Viaje extends Entretenimiento {
+import es.diverplan.trex.interfaces.Viaje;
+
+public class ViajeImpl extends Entretenimiento implements Viaje {
 
 	// CAMPOS O ATRIBUTOS
 	private LocalDate fechaSalida;
 	private int duracionViaje;
 	private float precio;
 
-	// GETTERS	
+	// GETTERS
+	@Override
 	public LocalDate getFechaSalida() {
 		return fechaSalida;
 	}
 
+	@Override
 	public int getDuracionViaje() {
 		return duracionViaje;
 	}
 
+	@Override
 	public float getPrecio() {
 		return precio;
 	}
@@ -36,11 +41,11 @@ public class Viaje extends Entretenimiento {
 	}
 
 	// CONSTRUCTORES
-	public Viaje() {
+	public ViajeImpl() {
 		super();
 	}
 
-	public Viaje(String titulo, String descripcion, LocalDate fechaSalida, int duracionViaje, float precio) {
+	public ViajeImpl(String titulo, String descripcion, LocalDate fechaSalida, int duracionViaje, float precio) {
 		super(titulo, descripcion);
 		this.fechaSalida = fechaSalida;
 		this.duracionViaje = duracionViaje;
