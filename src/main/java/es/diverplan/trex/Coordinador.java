@@ -1,5 +1,7 @@
 package es.diverplan.trex;
 
+import java.time.LocalDate;
+
 public class Coordinador {
 	
 	// CAMPOS O ATRIBUTOS
@@ -7,6 +9,8 @@ public class Coordinador {
 	private String apellidos;
 	private String telefono;
 	private String email;
+	private String residencia;
+	private LocalDate fechaNac; 
 	
 	// GETTERS
 	public String getNombre() {
@@ -23,6 +27,14 @@ public class Coordinador {
 	
 	public String getEmail() {
 		return email;
+	}
+	
+	public String getResidencia() {
+		return residencia;
+	}
+	
+	public LocalDate getFechaNac() {
+		return fechaNac;
 	}
 	
 	// SETTERS
@@ -42,14 +54,24 @@ public class Coordinador {
 		this.email = email;
 	}
 	
+	public void setResidencia(String residencia) {
+		this.residencia = residencia;
+	}
+	
+	public void setFechaNac(LocalDate fechaNac) {
+		this.fechaNac = fechaNac;
+	}
+	
 	// CONSTRUCTORES
 	public Coordinador() {}
 	
-	public Coordinador(String nombre, String apellidos, String telefono, String email) {
+	public Coordinador(String nombre, String apellidos, String telefono, String email, String residencia, LocalDate fechaNac) {
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.telefono = telefono;
 		this.email = email;
+		this.residencia = residencia;
+		this.fechaNac = fechaNac;
 	}
 
 }
