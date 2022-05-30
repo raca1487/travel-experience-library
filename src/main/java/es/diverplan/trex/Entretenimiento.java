@@ -46,5 +46,16 @@ public abstract class Entretenimiento {
 	public boolean addValoracion(Valoracion valoracion) {
 		return getValoraciones().add(valoracion);
 	}
+	
+	public int valoracionAverage() {
+		int acumulador = 0;
+		int average = acumulador / getValoraciones().size();
+		
+		for (Valoracion valoracion : getValoraciones()) {
+			acumulador += valoracion.getPuntuacion();
+		}
+		
+		return average;
+	}
 
 }
