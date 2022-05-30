@@ -49,7 +49,7 @@ public abstract class Entretenimiento {
 	
 	public int valoracionAverage() {
 		int acumulador = 0;
-		int average = acumulador / getValoraciones().size();
+		int average = Math.round(acumulador / getValoraciones().size());
 		
 		for (Valoracion valoracion : getValoraciones()) {
 			acumulador += valoracion.getPuntuacion();
