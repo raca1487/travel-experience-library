@@ -1,14 +1,16 @@
 package es.diverplan.trex;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
+//import java.util.List;
 
 public abstract class Entretenimiento {
 
 	// CAMPOS O ATRIBUTOS
 	private String titulo;
 	private String descripcion;
-	private List<Valoracion> valoraciones;
+//	private List<Valoracion> valoraciones;
+	private Collection<Valoracion> valoraciones;
 
 	// GETTERS
 	public String getTitulo() {
@@ -19,7 +21,11 @@ public abstract class Entretenimiento {
 		return descripcion;
 	}
 
-	public List<Valoracion> getValoraciones() {
+//	public List<Valoracion> getValoraciones() {
+//		return valoraciones;
+//	}
+	
+	public Collection<Valoracion> getValoraciones() {
 		return valoraciones;
 	}
 
