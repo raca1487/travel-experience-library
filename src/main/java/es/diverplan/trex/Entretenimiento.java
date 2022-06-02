@@ -24,7 +24,7 @@ public abstract class Entretenimiento {
 //	public List<Valoracion> getValoraciones() {
 //		return valoraciones;
 //	}
-	
+
 	public Collection<Valoracion> getValoraciones() {
 		return valoraciones;
 	}
@@ -37,7 +37,7 @@ public abstract class Entretenimiento {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
+
 	public void setValoraciones(Collection<Valoracion> valoraciones) {
 		this.valoraciones = valoraciones;
 	}
@@ -53,18 +53,18 @@ public abstract class Entretenimiento {
 	}
 
 	// METODOS
-	public boolean addValoracion(Valoracion valoracion) {
-		return getValoraciones().add(valoracion);
+	public void addValoracion(Valoracion valoracion) {
+		getValoraciones().add(valoracion);
 	}
-	
+
 	public int valoracionAverage() {
 		int acumulador = 0;
 		int average = Math.round(acumulador / getValoraciones().size());
-		
+
 		for (Valoracion valoracion : getValoraciones()) {
 			acumulador += valoracion.getPuntuacion();
 		}
-		
+
 		return average;
 	}
 
