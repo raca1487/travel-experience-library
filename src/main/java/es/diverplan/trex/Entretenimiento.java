@@ -37,6 +37,10 @@ public abstract class Entretenimiento {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+	
+	public void setValoraciones(Collection<Valoracion> valoraciones) {
+		this.valoraciones = valoraciones;
+	}
 
 	// CONSTRUCTORES
 	public Entretenimiento() {
