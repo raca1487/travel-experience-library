@@ -9,8 +9,8 @@ public abstract class Entretenimiento {
 	// CAMPOS O ATRIBUTOS
 	private String titulo;
 	private String descripcion;
-//	private List<Valoracion> valoraciones;
-	private Collection<Valoracion> valoraciones;
+//	private List<Valoracion> valoraciones = new ArrayList<Valoracion>();
+	private Collection<Valoracion> valoraciones = new ArrayList<Valoracion>();
 
 	// GETTERS
 	public String getTitulo() {
@@ -44,7 +44,7 @@ public abstract class Entretenimiento {
 
 	// CONSTRUCTORES
 	public Entretenimiento() {
-		this.valoraciones = new ArrayList<Valoracion>();
+//		this.valoraciones = new ArrayList<Valoracion>();
 	}
 
 	public Entretenimiento(String titulo, String descripcion) {
