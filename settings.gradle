@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'travel-experience-library'
+
+include('lib')
