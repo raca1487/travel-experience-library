@@ -45,7 +45,8 @@ public class Valoracion {
 		this.fechaPublicacion = LocalDateTime.now();
 	}
 	
-	public Valoracion(String comentario, int puntuacion) {
+	public Valoracion(String titulo, String comentario, int puntuacion) {
+		this.titulo = titulo;
 		this.comentario = comentario;
 		this.puntuacion = puntuacion;
 		this.fechaPublicacion = LocalDateTime.now();
