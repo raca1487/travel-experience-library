@@ -5,11 +5,16 @@ import java.time.LocalDateTime;
 public class Valoracion {
 
 	// CAMPOS O ATRIBUTOS
+	private String titulo;
 	private String comentario;
 	private int puntuacion;
 	private LocalDateTime fechaPublicacion;
 
 	// GETTERS
+	public String getTitulo() {
+		return titulo;
+	}
+
 	public String getComentario() {
 		return comentario;
 	}
@@ -20,6 +25,19 @@ public class Valoracion {
 
 	public LocalDateTime getFechaPublicacion() {
 		return fechaPublicacion;
+	}
+
+	// SETTERS
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public void setComentario(String comentario) {
+		this.comentario = comentario;
+	}
+
+	public void setPuntuacion(int puntuacion) {
+		this.puntuacion = puntuacion;
 	}
 
 	// CONSTRUCTORES
